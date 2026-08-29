@@ -36,9 +36,18 @@ public static void main(String[] args) {
     int d = user.nextInt();
     grades[3] = d;
 
+    int overallGrade = FinalGradeCalc.FinalGrade(grades)
 
     FinalGradeCalc.formatGrades(grades);
-    System.out.println("Overall Grade: " + FinalGradeCalc.FinalGrade(grades) + "\nfor student: " + student.getName() +" who is a "+ student.getGrade());
+    System.out.println("Overall Grade: " + overallGrade + "\nfor student: " + student.getName() +" who is a "+ student.getGrade());
+
+    if(overallGrade >= 70){
+        System.out.println("Congratulations, you're current passing!");
+    }
+    else{
+        System.out.println("Uh oh! Looks like you might have to retake the class.");
+    }
+
 }
 
 
