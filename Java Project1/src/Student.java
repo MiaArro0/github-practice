@@ -1,8 +1,8 @@
 public class Student {
     static String name;
-    static int grade;
+    static String grade;
 
-    public Student(String name, int age){
+    public Student(String name, String grade){
         this.name = name;
         this.grade = grade;
     }
@@ -11,8 +11,9 @@ public class Student {
         return name;
     }
 
-    public static int getGrade(){
+    public static String getGrade(){
         return grade;
     }
 
+    //hiii
 }
