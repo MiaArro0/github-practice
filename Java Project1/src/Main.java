@@ -16,8 +16,6 @@ public static void main(String[] args) {
 
     Student student = new Student(name,grade);
 
-    System.out.println(student.getName() + " " + student.getGrade());
-
     System.out.println("\nPlease enter your grades to the respective categories below: ");
 
     System.out.println("Assignments: ");
@@ -36,7 +34,7 @@ public static void main(String[] args) {
     int d = user.nextInt();
     grades[3] = d;
 
-    int overallGrade = FinalGradeCalc.FinalGrade(grades)
+    int overallGrade = FinalGradeCalc.FinalGrade(grades);
 
     FinalGradeCalc.formatGrades(grades);
     System.out.println("Overall Grade: " + overallGrade + "\nfor student: " + student.getName() +" who is a "+ student.getGrade());
